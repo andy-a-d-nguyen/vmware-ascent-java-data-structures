@@ -16,15 +16,15 @@ public class Stack {
     }
 
     public void push(Node node) {
-        node.next = head;
-        head = node;
+        node.next = head; // point node's next to the old head
+        head = node; // set node as new head
     }
 
     public Node pop() throws NullPointerException {
         if (head == null) {
             throw new NullPointerException("Stack is empty");
         }
-        Node poppedNode = head;
+        var poppedNode = head;
         head = head.next;
         return poppedNode;
     }

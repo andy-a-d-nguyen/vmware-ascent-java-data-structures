@@ -34,7 +34,7 @@ public class Queue {
             tail = null;
             throw new NullPointerException("Queue is empty");
         }
-        Node removedNode = head;
+        var removedNode = head;
         head = head.next;
         return removedNode;
     }
