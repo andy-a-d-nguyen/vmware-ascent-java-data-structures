@@ -1,6 +1,6 @@
 package datastructures;
 
-public class JavaLinkedList {
+public class LinkedList {
     private Node head;
 
     public boolean isEmpty() {

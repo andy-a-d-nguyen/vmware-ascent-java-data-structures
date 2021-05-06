@@ -1,12 +1,14 @@
 package test;
 
-import datastructures.JavaLinkedList;
+import datastructures.LinkedList;
 import datastructures.Node;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class LinkedListTests {
+
+    LinkedList linkedList = new LinkedList();
 
     @Test
     void defaultNodeTest() {
@@ -34,11 +36,9 @@ public class LinkedListTests {
 
     @Test
     void isEmptyTest() {
-        // initialize a linked list
-        JavaLinkedList list = new JavaLinkedList();
 
         // check if list is empty
-        boolean isEmpty = list.isEmpty();
+        boolean isEmpty = linkedList.isEmpty();
 
         // expected result
         boolean expected = true;
@@ -58,8 +58,6 @@ public class LinkedListTests {
 
     @Test
     void addObjectTest() {
-        // initialize a linked list
-        JavaLinkedList linkedList = new JavaLinkedList();
 
         // add nodes to linked list
         Node node = new Node(2);
@@ -73,8 +71,6 @@ public class LinkedListTests {
 
     @Test
     void addMultipleObjectTest() {
-        // initialize a linked list
-        JavaLinkedList linkedList = new JavaLinkedList();
 
         // add nodes to linked list
         Node node = new Node(2);
@@ -90,7 +86,6 @@ public class LinkedListTests {
 
     @Test
     void addFirstTest() {
-        JavaLinkedList linkedList = new JavaLinkedList();
 
         Node node1 = new Node(2);
         Node node2 = new Node(4);
@@ -105,8 +100,6 @@ public class LinkedListTests {
 
     @Test
     void addLastTest() {
-        // initialize a linked list
-        JavaLinkedList linkedList = new JavaLinkedList();
 
         // add nodes to linked list
         Node node = new Node(2);
@@ -121,8 +114,6 @@ public class LinkedListTests {
 
     @Test
     void removeTest() {
-        // initialize a linked list
-        JavaLinkedList linkedList = new JavaLinkedList();
 
         // add nodes to linked list
         Node node = new Node(2);
@@ -141,8 +132,6 @@ public class LinkedListTests {
 
     @Test
     void removeTest_noHead() {
-        // initialize a linked list
-        JavaLinkedList linkedList = new JavaLinkedList();
 
         // add nodes to linked list
         Node node = new Node(2);
