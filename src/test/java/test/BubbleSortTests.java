@@ -6,10 +6,10 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-import static algorithms.MergeSort.mergeSort;
+import static algorithms.BubbleSort.bubbleSort;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class MergeSortTests {
+class BubbleSortTests {
 
     @Test
     void mergeSortTest() {
@@ -25,7 +25,7 @@ class MergeSortTests {
         for (int i = 0; i < actual.length; i++) {
             actual[i] = list.get(i);
         }
-        mergeSort(actual);
+        bubbleSort(actual);
 
         assertEquals(1, actual[0].value, "should sort in numerical order");
         assertEquals(2, actual[1].value, "should sort in numerical order");
